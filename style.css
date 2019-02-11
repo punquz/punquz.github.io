@@ -1,0 +1,354 @@
+			body{
+				padding:0;
+				margin:0;
+				box-sizing: border-box;
+				overflow-x: hidden;
+				font-size: 16px;
+				font-family: 'Nunito', sans-serif;
+				color: #1c1b1b;
+			}
+			.main-content{
+				background:linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('images/backgrdimg.jpg') no-repeat center center;
+				background-size: cover;
+				color: rgba(255,255,255, 0.7);
+				width: 100%;
+				min-height: 80%;  /* Fallback for browsers do NOT support vh unit */
+  				min-height: 80vh; /* These two lines are counted as one :-)       */
+			}
+			.navbar{
+				padding:20px 0px;
+				transition: all 0.5s;
+			}
+			a {
+    			color: rgba(255,255,255, 0.7);
+			}
+			.navbar-toggle{
+				/*border-color:rgba(0,0,0,0.37);*/
+				border:none;
+			}
+			.navbar-toggle .icon-bar{
+				background-color:rgba(255,255,255,1.0);
+				width:27px;
+				height:4px;
+			}
+			a.navbar-brand{
+				font-size: 2.0em;
+				font-weight: 600;
+				color:rgba(255,255,255,0.8);
+			}
+			a.navbar-brand:hover{
+				color: rgba(255,255,255,1.0);
+			}
+			.nav{
+				font-size: 1.2em;
+				font-weight: 400;
+			}
+			section{
+				padding:10%;
+				min-height: 50%;  /* Fallback for browsers do NOT support vh unit */
+  				min-height: 50vh; /* These two lines are counted as one :-)       */
+				display: flex;
+  				align-items: center;
+  				justify-content: center;
+				color:rgba(248,248,242,0.92);
+				letter-spacing:2px;
+			}
+			section span{
+				color:#63d488;
+				font-weight:600;
+			}
+			section h5{
+				margin: 40px 0px;
+				line-height: 40px;
+			}
+			.aboutme{
+				background-color: #f0f0f0;
+			}
+			.aboutme-header{
+				padding-top:90px;
+			}
+			.aboutme-header h2{
+				margin:0px 0px 5px 0px;
+				font-weight: 900;
+			}
+			.aboutme-header span{
+				border-radius: 0;
+    			height: 3px;
+    			width: 75px;
+    			display: inline-block;
+    			background-color:#339999; 
+			}
+			.aboutme-content{
+				margin:20px 0px 20px 0px;
+			}
+			.progress{
+				background-color: #cccccc;
+			}
+			.aboutme-skills .progress{
+				height: 30px !important;
+			}
+			
+			.aboutme-skills .progress-bar{
+				font-size: 14px;
+				line-height: 30px;
+				background-color: #339999 !important;
+			}
+			.aboutme-skills>h3{
+				font-size: 30px;
+				font-weight: 700;
+			}
+			.aboutme-skills>span {
+			    display: block;
+			    margin-bottom: 5px;
+			    font-size: 15px;
+			    font-weight: 600;
+			    color: #444;
+			}
+			.aboutme-details h2{
+				font-weight: 700;
+			}
+			.aboutme-sortdesc h3{
+				line-height:30px;
+				letter-spacing: 1px;
+			}
+			.aboutme-sortdesc span{
+				font-weight:500;
+				color:#339999;
+			}
+			/* The actual timeline (the vertical ruler) */
+			.timeline {
+			position: relative;
+			width:100%;
+			margin: 0 auto;
+			}
+
+			/* The actual timeline (the vertical ruler) */
+			.timeline::after {
+			content: '';
+			position: absolute;
+			width: 6px;
+			background-color: white;
+			top: 0;
+			bottom: 0;
+			left: 30%;
+			margin-left: -3px;
+			}
+
+			/* Container around content */
+			.timeline .container {
+			padding: 10px 40px;
+			position: relative;
+			background-color: inherit;
+			width: 50%;
+			}
+
+			/* The circles on the timeline */
+			.timeline .container::after {
+			content: '';
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			right: -17px;
+			background-color: white;
+			border: 4px solid #FF9F55;
+			top: 15px;
+			border-radius: 50%;
+			z-index: 1;
+			}
+			/* Place the container to the right */
+			.timeline .right {
+			left: 5.5%;
+			}
+
+			/* Add arrows to the right container (pointing left) */
+			.timeline .right::before {
+			content: " ";
+			height: 0;
+			position: absolute;
+			top: 22px;
+			width: 0;
+			z-index: 1;
+			left: 30px;
+			border: medium solid white;
+			border-width: 10px 10px 10px 0;
+			border-color: transparent white transparent transparent;
+			}
+
+			/* Fix the circle for containers on the right side */
+			.timeline .right::after {
+			left: -16px;
+			}
+
+			/* The actual content */
+			.timeline .content {
+			padding: 10px 0px 10px 15px;
+			background-color: white;
+			position: relative;
+			border-radius: 6px;
+			}
+			.timeline .content p{
+				white-space: pre-wrap;
+				word-wrap: break-word;
+			}
+			@media only screen and (min-width: 768px){
+				.nav > li > a:focus,.nav > li > a:hover{
+					border-bottom: 4px solid #ff3333;
+					background-color: rgba(255,255,255,0.0);
+					color:rgba(255,255,255,1.0);
+					font-weight: 500;	
+				}
+				.nav
+				{
+				    position: absolute;
+				    width: 100%;
+				    left: 50%;
+				    text-align: center;
+				}
+				.navbar-brand{
+					position: absolute;
+				    width: 100%;
+				    left: 15%;
+				}
+				.nav li{
+					margin-right: 3%;
+				}
+				section h3{
+					font-size: 2.5em;
+				}
+				section h5{
+					font-size: 1.8em;
+				}
+				#hireme{
+					margin-top: 3.0em;
+				}
+				#hireme button{
+					padding: 20px 35px;
+					font-size: 1.3em;
+				}.aboutme-header h2{
+					font-size: 2.0em;
+				}.timeline .container {
+					width: 100%;
+				}.timeline::after{
+					left:5%;
+				}
+			}
+
+
+			@media only screen and (max-width: 767px) {
+				.navbar-collapse{
+					text-align: center;
+					background: #404343;
+					border-top: 1px solid rgba(153,153,153,0.32);
+				}
+				.nav>li{
+    				padding: 3px 0px;
+				}
+				.nav>li>a{
+					font-size: 0.9em;
+					color:rgba(255,255,255,0.8);
+					font-weight: 400;
+				}
+			   .nav>li:last-of-type{
+					border-bottom:none;
+				}
+				.nav > li > a:focus,.nav > li > a:hover{
+					border-bottom: none;
+					background-color:transparent;
+					color:rgba(0,0,0,1.0);
+					font-weight: 500;
+				}
+				#menu-navbar-collapse{
+				position: fixed;
+				top:0;
+				right:0;
+				z-index: 2;
+				width:300px;
+				height:100%;
+				}
+				section{
+					padding:7%;
+				}
+				section h3{
+					font-size: 2.0em;
+					line-height:1.2em;
+				}
+				section h5{
+					font-size: 1.5em;
+					line-height: 2em;
+				}
+				#hireme{
+					margin-top: 2.0em;
+				}
+				#hireme button{
+					padding: 15px 25px;
+					font-size: 1.3em;
+
+				}
+				.aboutme-header h2{
+					font-size: 1.7em;
+				}
+				.aboutme-sortdesc h3{
+					font-size: 1.3em;
+				}
+				.timeline::after {
+					left: 31px;
+				}
+				/* Full-width containers */
+				.timeline .container {
+					width: 100%;
+					padding-left: 70px;
+					padding-right: 25px;
+				}
+				/* Make sure that all arrows are pointing leftwards */
+				.timeline .container::before {
+				left: 60px;
+				border: medium solid white;
+				border-width: 10px 10px 10px 0;
+				border-color: transparent white transparent transparent;
+				}
+				/* Make sure all circles are at the same spot */
+				.timeline .right::after {
+					left: 15px;
+				}
+
+				/* Make all right containers behave like the left ones */
+				.timeline .right {
+					left: 0%;
+				}
+				.aboutme-skills{
+					margin-top:30px;
+				}
+			}
+
+			@media only screen and (max-width : 480px) {
+				section{
+					padding:5%;
+				}
+				section h3{
+					font-size: 1.7em;
+					line-height: 1.2em;
+				}
+				section h5{
+					font-size: 1.1em;
+					line-height: 2em;
+				}
+				#hireme-top{
+					margin-top: 1.5em;
+				}
+			}
+
+			@media only screen and (max-width : 320px) {
+				section{
+					padding:3%;
+				}
+				section h3{
+					font-size: 1.5em;
+				}
+				section h5{
+					font-size: 1.0em;
+				}
+				#hireme{
+					margin-top: 1.0em;
+				}
+			}
+
